@@ -17,7 +17,7 @@ public class Dictionary {
 
     public Word getWordByword_target(String word_target) {
         for (int i = 0; i < words.size(); i++) {
-            if (words.get(i).getWord_target() == word_target) {
+            if (words.get(i).getWord_target().equals(word_target)) {
                 return words.get(i);
             }
         }

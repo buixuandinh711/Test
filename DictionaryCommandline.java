@@ -52,6 +52,11 @@ public class DictionaryCommandline {
                 case 4:
                     dictionaryManagements.dictionaryExportToFile();
                     break;
+                case 5:
+                    String word_target = scanner.nextLine();
+                    dictionaryManagements.removeWord(word_target);
+                    dictionaryManagements.showAllWords();
+                    break;
             }
             if (n == 0) break;
         }
