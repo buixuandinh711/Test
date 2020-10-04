@@ -57,6 +57,10 @@ public class DictionaryCommandline {
                     dictionaryManagements.removeWord(word_target);
                     dictionaryManagements.showAllWords();
                     break;
+                case 6:
+                    String word_targets = scanner.nextLine();
+                    dictionaryManagements.repair(word_targets);
+                    dictionaryManagements.showAllWords();
             }
             if (n == 0) break;
         }

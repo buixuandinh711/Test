@@ -82,4 +82,12 @@ public class DictionaryManagement {
         }
         printWriter.close();
     }
+
+    public void repair(String word_target) {
+        Scanner scanner = new Scanner(System.in);
+        String word_targets = scanner.nextLine();
+        String word_explains = scanner.nextLine();
+        dictionarys.getWordByword_target(word_target).setWord_explain(word_explains);
+        dictionarys.getWordByword_target(word_target).setWord_target(word_targets);
+    }
 }
